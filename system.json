@@ -1,0 +1,29 @@
+{
+  "name": "kalymba",
+  "title": "Kalymba",
+  "description": "The Kalymba system for FoundryVTT!",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.7.5",
+  "compatibleCoreVersion": "0.7.9",
+  "templateVersion": 2,
+  "author": "itsmegrave",
+  "esmodules": ["module/kalymba.js"],
+  "styles": ["css/kalymba.css"],
+  "scripts": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "pt-br",
+      "name": "Português",
+      "path": "lang/pt-br.json"
+    }
+  ],
+  "gridDistance": 5,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt"
+}

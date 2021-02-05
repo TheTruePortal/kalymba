@@ -1,0 +1,236 @@
+{
+  "Actor": {
+    "types": ["character"],
+    "templates": {
+      "base": {
+        "health": {
+          "label": "BASE.HEALTH",
+          "value": 15,
+          "min": 0
+        },
+        "power": {
+          "label": "BASE.POWER",
+          "value": 0,
+          "min": 0
+        }
+      },
+      "attributes": {
+        "strength": {
+          "label": "ATTRIBUTES.STRENGTH",
+          "min": 0,
+          "max": 6
+        },
+        "agility": {
+          "label": "ATTRIBUTES.AGILITY",
+          "min": 0,
+          "max": 6
+        },
+        "vigor": {
+          "label": "ATTRIBUTES.VIGOR",
+          "min": 0,
+          "max": 6
+        },
+        "intellect": {
+          "label": "ATTRIBUTES.INTELLECT",
+          "min": 0,
+          "max": 6
+        },
+        "ginga": {
+          "label": "ATTRIBUTES.GINGA",
+          "min": 0,
+          "max": 6
+        },
+        "ori": {
+          "label": "ATTRIBUTES.ORI",
+          "min": 0,
+          "max": 6
+        }
+      },
+      "skills": {
+        "physical": {
+          "fight": {
+            "label": "SKILLS.PHYSICAL.FIGHT",
+            "value": 0,
+            "attributes": "strength"
+          },
+          "power": {
+            "label": "SKILLS.PHYSICAL.POWER",
+            "value": 0,
+            "attributes": "strength"
+          },
+          "swimming": {
+            "label": "SKILLS.PHYSICAL.SWIMMING",
+            "value": 0,
+            "attributes": "strength"
+          },
+          "climbing": {
+            "label": "SKILLS.PHYSICAL.CLIMBING",
+            "value": 0,
+            "attributes": "strength"
+          },
+          "shoot": {
+            "label": "SKILLS.PHYSICAL.SHOOT",
+            "value": 0,
+            "attributes": "agility"
+          },
+          "initiative": {
+            "label": "SKILLS.PHYSICAL.INITIATIVE",
+            "value": 0,
+            "attributes": "agility"
+          },
+          "dodge": {
+            "label": "SKILLS.PHYSICAL.DODGE",
+            "value": 0,
+            "attributes": "agility"
+          },
+          "running": {
+            "label": "SKILLS.PHYSICAL.RUNNING",
+            "value": 0,
+            "attributes": "agility"
+          },
+          "ride": {
+            "label": "SKILLS.PHYSICAL.RIDE",
+            "value": 0,
+            "attributes": "agility"
+          },
+          "jump": {
+            "label": "SKILLS.PHYSICAL.JUMP",
+            "value": 0,
+            "attributes": "agility"
+          },
+          "balance": {
+            "label": "SKILLS.PHYSICAL.BALANCE",
+            "value": 0,
+            "attributes": "agility"
+          },
+          "stealth": {
+            "label": "SKILLS.PHYSICAL.STEALTH",
+            "value": 0,
+            "attributes": "agility"
+          },
+          "escape": {
+            "label": "SKILLS.PHYSICAL.ESCAPE",
+            "value": 0,
+            "attributes": "agility"
+          }
+        },
+        "social": {
+          "cheat": {
+            "label": "SKILLS.SOCIAL.CHEAT",
+            "value": 0,
+            "attributes": "ginga"
+          },
+          "intimidation": {
+            "label": "SKILLS.SOCIAL.INTIMIDATION",
+            "value": 0,
+            "attributes": "ginga"
+          },
+          "persuasion": {
+            "label": "SKILLS.SOCIAL.PERSUASION",
+            "value": 0,
+            "attributes": "ginga"
+          },
+          "seduction": {
+            "label": "SKILLS.SOCIAL.SEDUCTION",
+            "value": 0,
+            "attributes": "ginga"
+          },
+          "intuition": {
+            "label": "SKILLS.SOCIAL.INTUITION",
+            "value": 0,
+            "attributes": "ginga"
+          }
+        },
+        "knowledge": {
+          "creatures": {
+            "label": "SKILLS.KNOWLEDGE.CREATURES",
+            "value": 0,
+            "attributes": "intellect"
+          },
+          "nature": {
+            "label": "SKILLS.KNOWLEDGE.NATURE",
+            "value": 0,
+            "attributes": "intellect"
+          },
+          "mysticism": {
+            "label": "SKILLS.KNOWLEDGE.MYSTICISM",
+            "value": 0,
+            "attributes": "intellect"
+          },
+          "civilizations": {
+            "label": "SKILLS.KNOWLEDGE.CIVILIZATIONS",
+            "value": 0,
+            "attributes": "intellect"
+          }
+        },
+        "resistances": {
+          "will": {
+            "label": "SKILLS.RESISTANCES.WILL",
+            "value": 0,
+            "attributes": "ori"
+          },
+          "fortitude": {
+            "label": "SKILLS.RESISTANCES.FORTITUDE",
+            "value": 0,
+            "attributes": "vigor"
+          },
+          "senses": {
+            "perception": {
+              "label": "SKILLS.SENSES.PERCEPTION",
+              "value": 0,
+              "attributes": "ori"
+            }
+          },
+          "crafts": {}
+        }
+      }
+    },
+    "character": {
+      "templates": ["base"],
+      "details": {
+        "race": {
+          "label": "DETAILS.RACE",
+          "value": ""
+        },
+        "size": {
+          "label": "DETAILS.SIZE",
+          "value": ""
+        },
+        "orixa": {
+          "label": "DETAILS.ORIXA",
+          "value": ""
+        },
+        "age": {
+          "label": "DETAILS.AGE",
+          "value": 0
+        },
+        "level": {
+          "label": "DETAILS.LEVEL",
+          "value": ""
+        },
+        "degree": {
+          "label": "DETAILS.DEGREE",
+          "value": ""
+        },
+        "xp": {
+          "label": "DETAILS.XP",
+          "value": 0
+        }
+      },
+      "currency": {
+        "gana": {
+          "label": "CURRENCY.GANA",
+          "value": 0
+        }
+      }
+    }
+  },
+  "Item": {
+    "types": ["weapon", "armor", "spell"],
+    "templates": {
+      "base": {
+        "description": ""
+      }
+    }
+  }
+}
