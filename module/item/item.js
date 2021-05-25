@@ -6,7 +6,7 @@ export class KalymbaItem extends Item {
   /**
    * Augment the basic Item data model with additional dynamic data.
    */
-  prepareData() {
+  prepareData () {
     super.prepareData();
 
     // Get the Item's data

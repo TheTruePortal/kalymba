@@ -8,15 +8,15 @@ const sass = require('gulp-sass');
 /* ----------------------------------------- */
 
 // Small error handler helper function.
-function handleError(err) {
+function handleError (err) {
   console.log(err.toString());
   this.emit('end');
 }
 
-const SYSTEM_SCSS = ["scss/**/*.scss"];
-function compileScss() {
+const SYSTEM_SCSS = ['scss/**/*.scss'];
+function compileScss () {
   // Configure options for sass output. For example, 'expanded' or 'nested'
-  let options = {
+  const options = {
     outputStyle: 'expanded'
   };
   return gulp.src(SYSTEM_SCSS)
@@ -27,7 +27,7 @@ function compileScss() {
     .pipe(prefix({
       cascade: false
     }))
-    .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest('./css'));
 }
 const css = gulp.series(compileScss);
 
@@ -35,7 +35,7 @@ const css = gulp.series(compileScss);
 /*  Watch Updates
 /* ----------------------------------------- */
 
-function watchUpdates() {
+function watchUpdates () {
   gulp.watch(SYSTEM_SCSS, css);
 }
 

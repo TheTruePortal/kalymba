@@ -3,20 +3,19 @@
  * @extends {ItemSheet}
  */
 export class KalymbaItemSheet extends ItemSheet {
-
   /** @override */
-  static get defaultOptions() {
+  static get defaultOptions () {
     return mergeObject(super.defaultOptions, {
-      classes: ["kalymba", "sheet", "item"],
+      classes: ['kalymba', 'sheet', 'item'],
       width: 520,
       height: 480,
-      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
+      tabs: [{ navSelector: '.sheet-tabs', contentSelector: '.sheet-body', initial: 'description' }]
     });
   }
 
   /** @override */
-  get template() {
-    const path = "systems/kalymba/templates/item";
+  get template () {
+    const path = 'systems/kalymba/templates/item';
     // Return a single sheet for all item types.
     return `${path}/item-sheet.html`;
     // Alternatively, you could use the following return statement to do a
@@ -28,7 +27,7 @@ export class KalymbaItemSheet extends ItemSheet {
   /* -------------------------------------------- */
 
   /** @override */
-  getData() {
+  getData () {
     const data = super.getData();
     return data;
   }
@@ -36,18 +35,18 @@ export class KalymbaItemSheet extends ItemSheet {
   /* -------------------------------------------- */
 
   /** @override */
-  setPosition(options = {}) {
+  setPosition (options = {}) {
     const position = super.setPosition(options);
-    const sheetBody = this.element.find(".sheet-body");
+    const sheetBody = this.element.find('.sheet-body');
     const bodyHeight = position.height - 192;
-    sheetBody.css("height", bodyHeight);
+    sheetBody.css('height', bodyHeight);
     return position;
   }
 
   /* -------------------------------------------- */
 
   /** @override */
-  activateListeners(html) {
+  activateListeners (html) {
     super.activateListeners(html);
 
     // Everything below here is only needed if the sheet is editable
