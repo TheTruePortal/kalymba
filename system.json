@@ -22,8 +22,8 @@
   "gridUnits": "m",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "url": "",
-  "manifest": "",
-  "download": "",
+  "url": "https://github.com/TheTruePortal/kalymba",
+  "manifest": "https://github.com/TheTruePortal/kalymba/blob/main/system.json",
+  "download": "https://github.com/TheTruePortal/kalymba/archive/refs/heads/main.zip",
   "license": "LICENSE.txt"
 }
